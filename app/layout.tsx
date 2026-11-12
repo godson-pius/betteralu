@@ -31,7 +31,7 @@ function getMetadataBase(): URL {
 const campaignTitle =
   "Godson Azubuike | Candidate for SRC President — ALU";
 const campaignDescription =
-  "Together, We Make ALU Better. One community. Shared responsibility. A better ALU. Explore Godson Azubuike's vision, practical priorities, and accountability plan for ALU SRC. Election Day: 25 November 2026.";
+  "Together, We Make ALU Better. One community. Shared responsibility. A better ALU. Explore Godson Azubuike's vision, practical priorities, and accountability plan for ALU SRC. Election Day: To be determined.";
 
 export const viewport: Viewport = {
   themeColor: "#0A192F",
@@ -84,7 +84,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: campaignTitle,
     description:
-      "Together, We Make ALU Better. One community. Shared responsibility. A better ALU. Election Day: 25 November 2026.",
+      "Together, We Make ALU Better. One community. Shared responsibility. A better ALU. Election Day: To be determined.",
   },
 };
 

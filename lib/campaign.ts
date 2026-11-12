@@ -19,7 +19,7 @@ export const CAMPAIGN_CONFIG = {
     position: "Candidate for SRC President",
     university: "African Leadership University",
     universityShort: "ALU",
-    electionDate: "TBD",
+    electionDate: "To be determined",
     whatsappNumber: "250799908557",
     whatsappDisplay: "+250 799 908 557",
     /**

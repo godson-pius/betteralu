@@ -3,7 +3,7 @@ import { readFile } from "node:fs/promises";
 import { join } from "node:path";
 
 export const alt =
-  "Vote Godson Azubuike for SRC President — African Leadership University. Together, We Make ALU Better. Election Day: TBD.";
+  "Vote Godson Azubuike for SRC President — African Leadership University. Together, We Make ALU Better. Election Day: To be determined.";
 
 export const size = {
   width: 1200,
@@ -80,7 +80,7 @@ export default async function OpenGraphImage() {
                 color: "#E2BD64",
               }}
             >
-              ELECTION DAY | TBD
+              ELECTION DAY | To be determined
             </div>
 
             <div
