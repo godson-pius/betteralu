@@ -1,0 +1,10 @@
+<svg width="720" height="900" viewBox="0 0 720 900" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="portraitPlaceholderTitle portraitPlaceholderDesc">
+  <title id="portraitPlaceholderTitle">Candidate Portrait Placeholder</title>
+  <desc id="portraitPlaceholderDesc">Editorial portrait placeholder for Godson Azubuike. Replace via public/images/candidate-portrait.jpg and lib/campaign.ts.</desc>
+  <rect width="720" height="900" fill="#0F2342"/>
+  <rect x="24" y="24" width="672" height="852" rx="12" stroke="#D4A843" stroke-opacity="0.35" stroke-width="1.5"/>
+  <circle cx="360" cy="310" r="96" fill="#17335E" stroke="#D4A843" stroke-opacity="0.45" stroke-width="1.5"/>
+  <path d="M180 680C180 558.497 260.589 460 360 460C459.411 460 540 558.497 540 680V740H180V680Z" fill="#17335E" stroke="#D4A843" stroke-opacity="0.45" stroke-width="1.5"/>
+  <line x1="220" y1="785" x2="500" y2="785" stroke="#D4A843" stroke-opacity="0.4" stroke-width="1"/>
+</svg>
+
