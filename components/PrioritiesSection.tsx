@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import {
   Bus,
   Wifi,
@@ -8,6 +9,8 @@ import {
   MessageSquare,
   Check,
   Info,
+  ArrowRight,
+  BookOpen,
 } from "lucide-react";
 import { CAMPAIGN_CONFIG } from "@/lib/campaign";
 import { Reveal } from "@/components/MotionPrimitives";
@@ -20,7 +23,7 @@ const PRIORITY_ICONS = {
 } as const;
 
 export function PrioritiesSection() {
-  const { priorities } = CAMPAIGN_CONFIG;
+  const { priorities, manifesto } = CAMPAIGN_CONFIG;
   const [selectedId, setSelectedId] = useState<string>(priorities.items[0].id);
 
   return (
@@ -157,6 +160,55 @@ export function PrioritiesSection() {
             );
           })}
         </div>
+
+        {/* Full Manifesto Read-More Callout */}
+        <Reveal delay={0.12}>
+          <div className="mt-10 rounded-2xl border border-navy-800 bg-navy-900 bg-navy-mesh p-6 text-white shadow-lg sm:p-8 lg:p-10">
+            <div className="flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between">
+              <div className="max-w-2xl">
+                <div className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[0.16em] text-gold-400">
+                  <BookOpen className="h-4 w-4" aria-hidden="true" />
+                  <span>Complete 8-Point Manifesto</span>
+                </div>
+                <h3 className="mt-2.5 text-2xl font-bold tracking-tight text-white sm:text-3xl">
+                  Explore the Full Plan for a Stronger, More Accountable SRC
+                </h3>
+                <p className="mt-3 text-sm leading-relaxed text-slate-200 sm:text-base">
+                  Read all 8 manifesto pillars in detail—including SRC
+                  recognition &amp; continuity, accommodation information,
+                  opportunities beyond the classroom, community engagement,
+                  responsible financial planning, and my first 5 priorities if
+                  elected.
+                </p>
+              </div>
+
+              <div className="shrink-0">
+                <Link
+                  href="/manifesto"
+                  className="inline-flex items-center gap-2 rounded-md bg-gold-500 px-6 py-3.5 text-sm font-bold text-navy-950 shadow-sm transition-colors hover:bg-gold-400 sm:text-base"
+                >
+                  Read Full Manifesto
+                  <ArrowRight className="h-4 w-4" aria-hidden="true" />
+                </Link>
+              </div>
+            </div>
+
+            <div className="mt-6 grid gap-2.5 border-t border-navy-700 pt-6 sm:grid-cols-2 lg:grid-cols-4">
+              {manifesto.pillars.map((pillar) => (
+                <Link
+                  key={pillar.id}
+                  href={`/manifesto#${pillar.id}`}
+                  className="group flex items-center gap-2.5 rounded-lg border border-navy-700 bg-navy-800/80 px-3.5 py-2.5 text-xs font-medium text-slate-100 transition-colors hover:border-gold-400 hover:bg-navy-800 hover:text-white"
+                >
+                  <span className="font-bold text-gold-400">
+                    {pillar.number}
+                  </span>
+                  <span className="line-clamp-1">{pillar.title}</span>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </Reveal>
       </div>
     </section>
   );

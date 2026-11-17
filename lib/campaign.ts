@@ -50,12 +50,12 @@ export const CAMPAIGN_CONFIG = {
   },
 
   navigation: [
-    { label: "Home", href: "#home" },
-    { label: "About", href: "#about" },
-    { label: "My Vision", href: "#vision" },
-    { label: "Priorities", href: "#priorities" },
-    { label: "Leadership", href: "#leadership" },
-    { label: "Contact", href: "#contact" },
+    { label: "Home", href: "/#home" },
+    { label: "About", href: "/#about" },
+    { label: "My Vision", href: "/#vision" },
+    { label: "Priorities", href: "/#priorities" },
+    { label: "Leadership", href: "/#leadership" },
+    { label: "Contact", href: "/#contact" },
   ],
 
   about: {
@@ -310,5 +310,290 @@ export const CAMPAIGN_CONFIG = {
         "Official student community updates, listening sessions, and discussions.",
     },
   ] as ContactChannel[],
+
+  manifesto: {
+    subtitle: "Listen. Represent. Act.",
+    opening: [
+      "Leadership is not about holding a title or making promises. It is about understanding the people you represent, bringing their concerns to the right tables, and following through until progress is made.",
+      "My vision is an ALU where students feel heard, student leaders are empowered to serve effectively, opportunities are accessible, and our community works together to solve the challenges we face.",
+      "I am running because I believe we can build a more responsive, connected and accountable student community. Not by starting everything from scratch, but by building on what already exists, improving what needs attention and introducing practical ideas where there are gaps.",
+    ],
+    pillars: [
+      {
+        number: "01",
+        id: "stronger-src",
+        title: "A Stronger SRC That Can Deliver",
+        intro:
+          "A student council can only serve students effectively when its members have the support and working relationships needed to do their jobs.",
+        leadIn: "I will work towards:",
+        bullets: [
+          {
+            lead: "Better recognition for SRC members:",
+            text: "Advocate for an official and distinct SRC identification system that makes it easier for students and staff to recognise student representatives.",
+          },
+          {
+            lead: "Stronger access to university stakeholders:",
+            text: "Push for clearer communication and escalation channels between the SRC, relevant university teams and management.",
+          },
+          {
+            lead: "Meaningful roles and responsibilities:",
+            text: "Ensure every executive understands their portfolio, has clear expectations and receives the support needed to deliver.",
+          },
+          {
+            lead: "Continuity between leadership teams:",
+            text: "Strengthen handovers, documentation and follow-up so that useful work and pending initiatives are not abandoned whenever a new SRC takes office.",
+          },
+        ],
+        closingNote:
+          "The goal is simple: an SRC that is recognised, supported, coordinated and effective.",
+      },
+      {
+        number: "02",
+        id: "student-voice",
+        title: "A Student Voice That Leads to Action",
+        intro: "Students should not have to wait for election season to be heard.",
+        leadIn:
+          "I will champion a more accessible and accountable system for student feedback through:",
+        bullets: [
+          {
+            text: "Regular opportunities for students to share concerns and suggestions.",
+          },
+          {
+            text: "Accessible feedback channels for students on campus and those studying remotely.",
+          },
+          {
+            text: "A clear process for documenting, referring and following up on recurring concerns.",
+          },
+          {
+            text: "Regular updates so students know what has been raised, what is being worked on, what has been resolved and what remains outside the SRC's authority.",
+          },
+        ],
+        closingNote:
+          "I cannot promise that every request will be approved. I can commit to making sure genuine concerns are heard, properly represented and followed up.",
+      },
+      {
+        number: "03",
+        id: "academic-experience",
+        title: "A Better Academic Experience",
+        intro:
+          "Our academic experience should challenge us, but students should also have a reasonable opportunity to manage their workload.",
+        leadIn:
+          "I will work with Academic Affairs and the relevant university teams to:",
+        bullets: [
+          {
+            text: "Raise concerns about multiple assignments and deadlines clustering on the same day.",
+          },
+          {
+            text: "Advocate for better coordination and visibility of major academic deadlines.",
+          },
+          {
+            text: "Create more opportunities for peer learning, practical knowledge-sharing and academic support.",
+          },
+          {
+            text: "Explore supervised practical competitions and challenges that allow students to demonstrate what they can do beyond assignments.",
+          },
+        ],
+        extraParagraphs: [
+          "For BSc students, I want to explore practical coding challenges that reward problem-solving and technical ability. For Business and other relevant programmes, I want to explore pitching opportunities where students can develop and present business ideas.",
+        ],
+        closingNote:
+          "These initiatives will be developed with the relevant portfolios, students and potential partners, with realistic budgets and fair participation.",
+      },
+      {
+        number: "04",
+        id: "campus-life",
+        title: "Improving Everyday Campus Life",
+        intro:
+          "Some of the biggest student frustrations are not complicated. They are part of everyday campus life.",
+        leadIn:
+          "I will prioritise listening to students and raising recurring concerns around:",
+        bullets: [
+          {
+            lead: "Transportation:",
+            text: "Engage the relevant stakeholders on availability, reliability, timing and affordability.",
+          },
+          {
+            lead: "Internet connectivity:",
+            text: "Document recurring connectivity problems and pursue follow-up with the responsible university teams.",
+          },
+          {
+            lead: "Campus facilities:",
+            text: "Create a more organised way to report non-functional facilities and track whether reported issues are addressed.",
+          },
+        ],
+        closingNote:
+          "The focus will be on consistent follow-up, not making promises about services the SRC does not directly control.",
+      },
+      {
+        number: "05",
+        id: "accommodation",
+        title: "Fairer Access to Accommodation Information",
+        intro:
+          "Finding accommodation should not become an unnecessarily difficult experience, particularly for international students who may be unfamiliar with the local rental market.",
+        leadIn:
+          "I will explore partnerships and practical ways to improve access to reliable accommodation information, including:",
+        bullets: [
+          {
+            text: "A verified accommodation information directory where feasible.",
+          },
+          {
+            text: "Clearer listings with available locations, contact details and stated rental prices.",
+          },
+          {
+            text: "Opportunities to connect students with reliable landlords and accommodation providers.",
+          },
+          {
+            text: "A channel for students to report concerns about unfair treatment or misleading rental information.",
+          },
+        ],
+        closingNote:
+          "The SRC cannot set prices for private landlords or guarantee accommodation. However, we can work towards better information, stronger connections and a clearer way to raise concerns.",
+      },
+      {
+        number: "06",
+        id: "opportunities",
+        title: "More Opportunities Beyond the Classroom",
+        intro:
+          "ALU should be a place where students can connect what they learn to real opportunities.",
+        leadIn:
+          "I will use existing relationships and pursue new partnerships to explore:",
+        bullets: [
+          { text: "Internship and career opportunities." },
+          { text: "Industry engagement and professional mentorship." },
+          { text: "Practical competitions and student showcases." },
+          { text: "Business pitching and entrepreneurship opportunities." },
+          {
+            text: "Connections with organisations that can support student development.",
+          },
+        ],
+        extraParagraphs: [
+          "I will also work with relevant SRC portfolios to identify opportunities across different programmes, rather than focusing on only one group of students.",
+        ],
+        closingNote:
+          "The goal is to create more pathways for students to learn, demonstrate their abilities and connect with the world beyond campus.",
+      },
+      {
+        number: "07",
+        id: "engaged-community",
+        title: "A More Engaged and Connected ALU Community",
+        intro:
+          "A stronger student community does not happen by accident. It grows when students have meaningful reasons and opportunities to participate.",
+        leadIn: "I will support the relevant SRC portfolios in developing:",
+        bullets: [
+          {
+            text: "More inclusive student activities and community-building events.",
+          },
+          {
+            text: "Opportunities for students from different programmes, backgrounds and year groups to connect.",
+          },
+          {
+            text: "Student-led initiatives that encourage participation, collaboration and personal growth.",
+          },
+          {
+            text: "Practical ways to recognise and appreciate consistent student participation.",
+          },
+        ],
+        closingNote:
+          "I also want to explore a student engagement and recognition system that encourages participation in campus activities. This will be developed with the relevant portfolio and based on available resources, rather than becoming another costly programme.",
+      },
+      {
+        number: "08",
+        id: "financial-planning",
+        title: "Responsible Financial Planning and Resource Mobilisation",
+        intro: "Good ideas need responsible planning to become reality.",
+        leadIn:
+          "I will work towards stronger financial coordination within the SRC by:",
+        bullets: [
+          {
+            text: "Encouraging better planning across portfolios so available resources are considered fairly.",
+          },
+          {
+            text: "Improving visibility of proposed activities, budgets, approvals and outstanding requests.",
+          },
+          {
+            text: "Exploring partnerships and legitimate external sponsorship opportunities.",
+          },
+          {
+            text: "Advocating for a clearer financial oversight structure that gives the appropriate SRC officers meaningful responsibilities while respecting university financial policies.",
+          },
+          {
+            text: "Promoting transparency and accountability in the use of resources.",
+          },
+        ],
+        closingNote:
+          "I will also review existing arrangements and previous proposals before advocating for changes such as a dedicated SRC account. Any financial structure must have the necessary university approval, clear controls and proper accountability.",
+      },
+    ],
+    wayILead: {
+      heading: "The Way I Will Lead",
+      subheading: "Listen. Represent. Act.",
+      pillars: [
+        {
+          title: "Listen",
+          description:
+            "I will make time to understand students' experiences, including perspectives that may differ from my own.",
+        },
+        {
+          title: "Represent",
+          description:
+            "I will communicate student concerns honestly and engage the appropriate people and offices to seek solutions.",
+        },
+        {
+          title: "Act",
+          description:
+            "I will coordinate the SRC team, follow up on commitments and keep students informed about progress.",
+        },
+      ],
+      notes: [
+        "I believe a President should not attempt to do every executive's job. The role is to provide direction, support the team, remove obstacles, encourage collaboration and hold everyone accountable for their responsibilities.",
+        "I also believe leadership should make people feel valued. SRC members volunteer their time and effort. They deserve clear responsibilities, reasonable support, recognition and an environment where they can contribute and grow.",
+      ],
+    },
+    firstPriorities: {
+      heading: "My First Priorities If Elected",
+      intro:
+        "I will begin by understanding the work already done before introducing new initiatives.",
+      steps: [
+        {
+          number: "01",
+          title: "Review and understand the handover.",
+          description:
+            "Meet with outgoing leaders, review existing proposals, understand what has been implemented and identify what is still pending.",
+        },
+        {
+          number: "02",
+          title: "Engage students.",
+          description:
+            "Gather concerns from different programmes, year groups and remote students to identify the issues that require the most urgent attention.",
+        },
+        {
+          number: "03",
+          title: "Strengthen the SRC team.",
+          description:
+            "Clarify responsibilities, agree on working expectations and establish a practical system for communication, meetings and accountability.",
+        },
+        {
+          number: "04",
+          title: "Engage the relevant university stakeholders.",
+          description:
+            "Prioritise outstanding concerns and establish clear channels for raising and following up on them.",
+        },
+        {
+          number: "05",
+          title: "Communicate progress.",
+          description:
+            "Keep students informed about what the SRC is doing, what has changed, what is taking longer and why.",
+        },
+      ],
+    },
+    commitment: {
+      heading: "My Commitment To You",
+      paragraphs: [
+        "I will not tell you that I can solve every problem alone. I will not promise things that depend entirely on decisions outside the SRC's authority.",
+        "But I will listen. I will represent your concerns. I will work with the right people, support the team and follow through.",
+        "I want us to build an SRC that does not simply exist, but serves. An ALU community where students feel included, opportunities are pursued, concerns are taken seriously and leadership is accountable.",
+      ],
+    },
+  },
 } as const;
 

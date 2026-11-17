@@ -14,7 +14,7 @@ export function VisionSection() {
   return (
     <section
       id="vision"
-      className="border-b border-navy-800 bg-navy-900 py-20 text-white sm:py-24"
+      className="border-b border-navy-800 bg-navy-900 bg-navy-mesh py-20 text-white sm:py-24"
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <Reveal>

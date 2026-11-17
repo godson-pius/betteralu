@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Link from "next/link";
 import { Menu, X, ArrowRight } from "lucide-react";
 import { CAMPAIGN_CONFIG } from "@/lib/campaign";
 
@@ -36,8 +37,8 @@ export function Navbar() {
       }`}
     >
       <div className="mx-auto flex h-18 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
-        <a
-          href="#home"
+        <Link
+          href="/#home"
           className="group flex items-center gap-3 focus-visible:rounded-md"
         >
           <span
@@ -54,31 +55,31 @@ export function Navbar() {
               ALU SRC PRESIDENTIAL CAMPAIGN
             </span>
           </div>
-        </a>
+        </Link>
 
         <nav
           aria-label="Primary navigation"
           className="hidden items-center gap-1 lg:flex"
         >
           {CAMPAIGN_CONFIG.navigation.map((item) => (
-            <a
+            <Link
               key={item.href}
               href={item.href}
               className="rounded-md px-3 py-2 text-sm font-medium text-slate-700 transition-colors hover:bg-slate-100 hover:text-navy-900"
             >
               {item.label}
-            </a>
+            </Link>
           ))}
         </nav>
 
         <div className="hidden items-center gap-3 lg:flex">
-          <a
-            href="#priorities"
+          <Link
+            href="/manifesto"
             className="inline-flex items-center gap-2 rounded-md bg-navy-900 px-4 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-navy-800"
           >
             Explore My Manifesto
             <ArrowRight className="h-4 w-4 text-gold-400" aria-hidden="true" />
-          </a>
+          </Link>
         </div>
 
         <button
@@ -107,25 +108,25 @@ export function Navbar() {
             className="flex flex-col space-y-1"
           >
             {CAMPAIGN_CONFIG.navigation.map((item) => (
-              <a
+              <Link
                 key={item.href}
                 href={item.href}
                 onClick={() => setIsOpen(false)}
                 className="rounded-md px-3 py-2.5 text-base font-medium text-slate-800 transition-colors hover:bg-slate-100 hover:text-navy-900"
               >
                 {item.label}
-              </a>
+              </Link>
             ))}
           </nav>
           <div className="mt-4 border-t border-slate-200 pt-4">
-            <a
-              href="#priorities"
+            <Link
+              href="/manifesto"
               onClick={() => setIsOpen(false)}
               className="flex w-full items-center justify-center gap-2 rounded-md bg-navy-900 px-4 py-3 text-sm font-semibold text-white transition-colors hover:bg-navy-800"
             >
               Explore My Manifesto
               <ArrowRight className="h-4 w-4 text-gold-400" aria-hidden="true" />
-            </a>
+            </Link>
           </div>
         </div>
       )}
