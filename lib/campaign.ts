@@ -523,6 +523,33 @@ export const CAMPAIGN_CONFIG = {
         closingNote:
           "I will also review existing arrangements and previous proposals before advocating for changes such as a dedicated SRC account. Any financial structure must have the necessary university approval, clear controls and proper accountability.",
       },
+      {
+        number: "09",
+        id: "student-enterprise",
+        title: "Student Enterprise and Empowerment Initiative",
+        intro:
+          "Students at ALU have creativity, ambition and entrepreneurial drive—what is often missing is practical support to take the first step.",
+        leadIn: "The idea could involve:",
+        bullets: [
+          {
+            text: "Helping students identify business opportunities.",
+          },
+          {
+            text: "Supporting them to start small businesses with low capital.",
+          },
+          {
+            text: "Providing mentorship and practical business guidance.",
+          },
+          {
+            text: "Connecting promising student businesses to funding and customers.",
+          },
+          {
+            text: "Creating a community where students support and buy from one another.",
+          },
+        ],
+        closingNote:
+          "This initiative will be explored with the relevant SRC portfolios, student entrepreneurs and partners—focused on practical, low-barrier support rather than unrealistic promises.",
+      },
     ],
     wayILead: {
       heading: "The Way I Will Lead",

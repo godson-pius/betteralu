@@ -11,6 +11,7 @@ import {
   Info,
   ArrowRight,
   BookOpen,
+  Briefcase,
 } from "lucide-react";
 import { CAMPAIGN_CONFIG } from "@/lib/campaign";
 import { Reveal } from "@/components/MotionPrimitives";
@@ -25,6 +26,9 @@ const PRIORITY_ICONS = {
 export function PrioritiesSection() {
   const { priorities, manifesto } = CAMPAIGN_CONFIG;
   const [selectedId, setSelectedId] = useState<string>(priorities.items[0].id);
+  const enterpriseInitiative = manifesto.pillars.find(
+    (pillar) => pillar.id === "student-enterprise"
+  );
 
   return (
     <section
@@ -161,24 +165,69 @@ export function PrioritiesSection() {
           })}
         </div>
 
+        {/* Featured Initiative: Student Enterprise & Empowerment */}
+        {enterpriseInitiative && (
+          <Reveal delay={0.08}>
+            <div className="mt-10 rounded-2xl border border-navy-900/15 bg-white p-6 shadow-sm sm:p-8">
+              <div className="flex flex-col gap-6 lg:flex-row lg:items-start lg:justify-between">
+                <div className="max-w-xl">
+                  <div className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[0.14em] text-gold-700">
+                    <Briefcase className="h-4 w-4" aria-hidden="true" />
+                    <span>Manifesto Spotlight &bull; Pillar 09</span>
+                  </div>
+                  <h3 className="mt-2 text-2xl font-bold tracking-tight text-navy-900">
+                    {enterpriseInitiative.title}
+                  </h3>
+                  <p className="mt-3 text-sm leading-relaxed text-slate-700 sm:text-base">
+                    {enterpriseInitiative.intro}
+                  </p>
+                  <p className="mt-3 text-xs leading-relaxed text-slate-500 sm:text-sm">
+                    {enterpriseInitiative.closingNote}
+                  </p>
+                </div>
+
+                <div className="flex-1 rounded-xl border border-slate-200 bg-ivory p-5 sm:p-6">
+                  <p className="text-xs font-bold uppercase tracking-[0.12em] text-navy-900">
+                    {enterpriseInitiative.leadIn}
+                  </p>
+                  <ul className="mt-3 space-y-2.5">
+                    {enterpriseInitiative.bullets.map((bullet) => (
+                      <li
+                        key={bullet.text}
+                        className="flex items-start gap-2.5 text-sm leading-relaxed text-slate-700"
+                      >
+                        <Check
+                          className="mt-0.5 h-4 w-4 shrink-0 text-gold-700"
+                          aria-hidden="true"
+                        />
+                        <span>{bullet.text}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </Reveal>
+        )}
+
         {/* Full Manifesto Read-More Callout */}
         <Reveal delay={0.12}>
-          <div className="mt-10 rounded-2xl border border-navy-800 bg-navy-900 bg-navy-mesh p-6 text-white shadow-lg sm:p-8 lg:p-10">
+          <div className="mt-8 rounded-2xl border border-navy-800 bg-navy-900 bg-navy-mesh p-6 text-white shadow-lg sm:p-8 lg:p-10">
             <div className="flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between">
               <div className="max-w-2xl">
                 <div className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[0.16em] text-gold-400">
                   <BookOpen className="h-4 w-4" aria-hidden="true" />
-                  <span>Complete 8-Point Manifesto</span>
+                  <span>Complete 9-Point Manifesto</span>
                 </div>
                 <h3 className="mt-2.5 text-2xl font-bold tracking-tight text-white sm:text-3xl">
                   Explore the Full Plan for a Stronger, More Accountable SRC
                 </h3>
                 <p className="mt-3 text-sm leading-relaxed text-slate-200 sm:text-base">
-                  Read all 8 manifesto pillars in detail—including SRC
+                  Read all 9 manifesto pillars in detail—including SRC
                   recognition &amp; continuity, accommodation information,
-                  opportunities beyond the classroom, community engagement,
-                  responsible financial planning, and my first 5 priorities if
-                  elected.
+                  opportunities beyond the classroom, student enterprise &amp;
+                  empowerment, community engagement, responsible financial
+                  planning, and my first 5 priorities if elected.
                 </p>
               </div>
 
@@ -193,7 +242,7 @@ export function PrioritiesSection() {
               </div>
             </div>
 
-            <div className="mt-6 grid gap-2.5 border-t border-navy-700 pt-6 sm:grid-cols-2 lg:grid-cols-4">
+            <div className="mt-6 grid gap-2.5 border-t border-navy-700 pt-6 sm:grid-cols-2 lg:grid-cols-3">
               {manifesto.pillars.map((pillar) => (
                 <Link
                   key={pillar.id}

@@ -9,14 +9,14 @@ import { CAMPAIGN_CONFIG } from "@/lib/campaign";
 export const metadata: Metadata = {
   title: "My Manifesto",
   description:
-    "Read the full 8-point SRC Presidential Manifesto of Godson Azubuike at African Leadership University. Listen. Represent. Act. Election Day: 25 November 2026.",
+    "Read the full 9-point SRC Presidential Manifesto of Godson Azubuike at African Leadership University. Listen. Represent. Act. Election Day: 25 November 2026.",
   alternates: {
     canonical: "/manifesto",
   },
   openGraph: {
     title: "My Manifesto | Godson Azubuike for SRC President — ALU",
     description:
-      "Together, We Make ALU Better. Read all 8 manifesto pillars, leadership approach, and first priorities if elected.",
+      "Together, We Make ALU Better. Read all 9 manifesto pillars, leadership approach, and first priorities if elected.",
     url: "/manifesto",
     type: "article",
   },
@@ -79,7 +79,7 @@ export default function ManifestoPage() {
             <p className="text-xs font-bold uppercase tracking-[0.16em] text-gold-700">
               Manifesto Contents
             </p>
-            <div className="mt-4 grid gap-2.5 sm:grid-cols-2 lg:grid-cols-4">
+            <div className="mt-4 grid gap-2.5 sm:grid-cols-2 lg:grid-cols-3">
               {manifesto.pillars.map((pillar) => (
                 <a
                   key={pillar.id}
@@ -124,7 +124,7 @@ export default function ManifestoPage() {
                 My Manifesto
               </p>
               <h2 className="mt-2 text-3xl font-bold tracking-tight text-navy-900 sm:text-4xl">
-                Eight Practical Commitments for ALU
+                Nine Practical Commitments for ALU
               </h2>
             </div>
 
