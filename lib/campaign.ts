@@ -51,10 +51,10 @@ export const CAMPAIGN_CONFIG = {
 
   navigation: [
     { label: "Home", href: "/#home" },
-    { label: "About", href: "/#about" },
-    { label: "My Vision", href: "/#vision" },
+    { label: "My Journey", href: "/#about" },
+    { label: "Experience", href: "/#experience" },
+    { label: "Vision", href: "/#vision" },
     { label: "Priorities", href: "/#priorities" },
-    { label: "Leadership", href: "/#leadership" },
     { label: "Contact", href: "/#contact" },
   ],
 
