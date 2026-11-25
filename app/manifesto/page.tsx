@@ -9,7 +9,7 @@ import { CAMPAIGN_CONFIG } from "@/lib/campaign";
 export const metadata: Metadata = {
   title: "My Manifesto",
   description:
-    "Read the full 9-point SRC Presidential Manifesto of Godson Azubuike at African Leadership University. Listen. Represent. Act. Election Day: 25 November 2026.",
+    "Read the full 9-point SRC Presidential Manifesto of Godson Azubuike at African Leadership University. Listen. Represent. Act. Election Day: 27 November 2026.",
   alternates: {
     canonical: "/manifesto",
   },
